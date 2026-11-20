@@ -5,9 +5,10 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
 # First example
 
-def add(a, b): 
+def add(a, b):
     a + b
 
 def sub(a, b):
@@ -33,6 +34,23 @@ def exp(a, b):
 
 
 
+def subtract(a, b):
+    return (a - b)
+
+def multiply(a, b): 
+    return (a * b)
+
+def logarithm(a, b):
+    try:
+        value = math.log(a, b)
+    except ValueError:
+        print("Invalid Input! Did you use zero or negative inputs?")
+    except:
+        print("Unknown Error!")
+    return value
+
+def exponent(a, b):
+    return a**b
 
 
 
