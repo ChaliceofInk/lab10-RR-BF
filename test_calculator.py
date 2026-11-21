@@ -1,3 +1,6 @@
+# https://github.com/ChaliceofInk/lab10-RR-BF.git
+# Partner 1: Russell Richter
+# Partner 2: Brendan Fries
 import unittest
 from calculator import *
 
