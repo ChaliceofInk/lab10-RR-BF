@@ -1,3 +1,4 @@
+import math
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -6,6 +7,7 @@ One function per operation, in order.
 """
 import math
 # First example
+<<<<<<< HEAD
 def square_root(a):
     try:
         return math.sqrt(a)
@@ -17,22 +19,27 @@ def square_root(a):
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
-def hypotenuse(a, b):
-    math.hypot(a, b)
 def add(a, b): 
     return (a + b)
+=======
+
+
+def mul(a, b):
+    a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError('Cannot divide by zero.')
+    return a / b
+
+def exp(a, b):
+    return a ** b
+
+
+>>>>>>> 14942cf7e3dff46deadbcca087963bd5ae539aaa
 
 def subtract(a, b):
     return (a - b)
-
-def multiply(a, b): 
-    return (a * b)
-
-def divide(a, b): 
-    if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
-    else:
-        return (b / a)   # raise ZeroDivisionError if a == 0 
 
 def logarithm(a, b):
     try:
@@ -42,10 +49,4 @@ def logarithm(a, b):
     except:
         print("Unknown Error!")
     return value
-
-
-def exponent(a, b):
-    return a**b
-
-
 
