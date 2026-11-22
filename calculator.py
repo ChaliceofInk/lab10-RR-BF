@@ -28,7 +28,8 @@ def mul(a, b):
 def div(a, b):
     if b == 0:
         raise ValueError('Cannot divide by zero.')
-    return a / b
+    else:
+        return a / b
 
 def exp(a, b):
     return a ** b
@@ -41,9 +42,12 @@ def logarithm(a, b):
         value = math.log(a, b)
     except ValueError:
         raise ValueError("Invalid Input! Did you use zero or negative inputs?")
+        return None
     except ZeroDivisionError:
         raise ValueError("Invalid logarithm base!")
+        return None
     except:
         print("Unknown Error!")
+        return None
     return value
 
