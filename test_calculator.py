@@ -6,11 +6,11 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self):
+        self.assertEqual(add(3, 2), 5, 'add(3, 2)')
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(subtract(4, 2), 2, 'subtract(4, 2)')
     # ##########################
 
     ######## Partner 1
